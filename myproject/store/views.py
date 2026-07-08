@@ -6,10 +6,13 @@ def home(request):
 def home(request):
     context = {
         "name": "krish",
+        "course": "Django",
+        "date": "2024-06-10",
 
 
 
     }
+    return render(request, "store/home.html", context)
 
 
 
