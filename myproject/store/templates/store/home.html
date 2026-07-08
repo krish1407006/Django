@@ -10,6 +10,33 @@
     <h1> name:{{name}}</h1>
     <p>Course: {{course}}</p>
     <p>Date: {{date}}</p>
+    <p>City: {{city}}</p>
+    <p>College: {{college}}</p>
+    {% if is_student %}
+    <p>yes , you are a student</p>
     
+    {% else %}
+    <p>No, you are not a student</p>
+    {% endif %}
+
+    {% if age >= 18 %}
+    <p>you are eligible for voting</p>
+    {% else %}
+    <p>you are not eligible for voting</p>
+    {% endif %}
+
+ <h1>Welcome {{ name }}</h1>
+
+{% if marks >= 90 %}
+    <h2>Grade: A+</h2>
+{% elif marks >= 75 %}
+    <h2>Grade: A</h2>
+{% elif marks >= 60 %}
+    <h2>Grade: B</h2>
+{% else %}
+    <h2>Grade: C</h2>
+{% endif %}
+
+
 </body>
 </html>

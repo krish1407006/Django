@@ -8,6 +8,11 @@ def home(request):
         "name": "krish",
         "course": "Django",
         "date": "2024-06-10",
+        "city": "hoshiarpur",
+        "college":"RBPU",
+        "is_student":False,
+        "age": 20,
+        "marks": 90
 
 
 
