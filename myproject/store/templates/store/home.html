@@ -4,7 +4,7 @@
     <title>My First Django Template</title>
 </head>
 <body>
-    <h1>Welcome Krish!</h1>
+    <!-- <h1>Welcome Krish!</h1>
     <p>This page is rendered using a Django template.</p>
 
     <h1> name:{{name}}</h1>
@@ -35,7 +35,22 @@
     <h2>Grade: B</h2>
 {% else %}
     <h2>Grade: C</h2>
-{% endif %}
+{% endif %} -->
+
+<h1>Product List</h1>
+
+{% for product in products %}
+
+    <h2>{{ product.name }}</h2>
+
+    <p>Price: ₹{{ product.price }}</p>
+
+    <p>{{ product.description }}</p>
+
+    <hr>
+
+{% endfor %}
+
 
 
 </body>
