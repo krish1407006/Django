@@ -2,5 +2,5 @@ from django.http import HttpResponse
 
 
 def home(request):
-    return HttpResponse("Hello, World! This is the home page of  blog.")
+    return HttpResponse("Hello, World! This is the home page of the blog.")
 # Create your views here.
