@@ -10,5 +10,11 @@
 
     <p>name : {{ name }}</p>
     <p>course : {{ course }}</p>
+
+    {% if age >= 18 %}
+        <p>you are eligible for voting</p>
+    {% else %}
+        <p>you are not eligible for voting, age: {{ age }}</p>
+    {% endif %}
 </body>
 </html>
