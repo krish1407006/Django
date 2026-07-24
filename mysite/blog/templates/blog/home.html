@@ -1,26 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
-</head>
-<body>
-    <h1>Welcome to the Blog</h1>
-<!-- 
+{% extends 'blog/base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <h1>Welcome to the Blog Home Page</h1>
     <p>name : {{ name }}</p>
     <p>course : {{ course }}</p>
-
     {% if age >= 18 %}
         <p>you are eligible for voting</p>
     {% else %}
-        <p>you are not eligible for voting  age: {{ age }}</p>
-        <p>age: {{ age }}</p>
-    {% endif %} -->
-
-    {% block content %} 
-
-        <p>this is block content</p>
-    {% endblock %}
-</body>
-</html>
+        <p>you are not eligible for voting. age: {{ age }}</p>
+    {% endif %}
+{% endblock %}
