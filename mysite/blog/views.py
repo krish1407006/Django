@@ -14,7 +14,7 @@ def home(request):
         # "city": "hoshiarpur",
         # "college":"RBPU",
         # "is_student":False,
-        "age": 20,
+        "age": 20, 
         # "marks": 90
 
     }
