@@ -17,5 +17,10 @@
         <p>you are not eligible for voting  age: {{ age }}</p>
         <p>age: {{ age }}</p>
     {% endif %}
+
+    {% block content %}
+
+        <p>this is block content</p>
+    {% endblock %}
 </body>
 </html>
