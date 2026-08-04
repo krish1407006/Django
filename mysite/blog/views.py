@@ -6,8 +6,14 @@
 
 from django.shortcuts import render
 
+from mysite.blog.models import Post
+
 def home(request):
+
+    posts = Post.objects.all()  # Fetch all posts from the database
+    
     context = {
+        "posts": posts,
         "name": "krish",
         "course": "Django",
         # "date": "2024-06-10",
