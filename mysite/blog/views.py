@@ -13,7 +13,9 @@ def home(request):
     posts = Post.objects.all()  # Fetch all posts from the database
     
     context = {
+        "posts": ["html", "css", "javascript"],
         "posts": posts,
+        "title" : "Home Page",
    
 
     }

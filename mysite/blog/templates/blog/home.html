@@ -18,6 +18,14 @@
     {% empty %}
         <p>No posts available.</p>
     {% endfor %}
+
+    {%for title in title %}
+        <div>
+            <h2>{{ title }}</h2>
+        </div>
+    {% empty %}
+        <p>No titles available.</p>
+    {% endfor %}
     
 
     
