@@ -11,19 +11,19 @@
 
     {% for post in posts %}
         <div>
-            <h2>{{ post.title }}</h2>
+            <h2>{{ post.title }}</h2>  
             <p>{{ post.content }}</p>
             <small>Created at: {{ post.created_at }}</small>
         </div>
     {% empty %}
         <p>No posts available.</p>
     {% endfor %}
-
+  
 
     {%for title in title %}
         <div> 
             <h2>{{ title.upper}}</h2>
-            
+
         </div>
     {% empty %}
         <p>No titles available.</p>
