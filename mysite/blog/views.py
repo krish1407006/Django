@@ -16,7 +16,8 @@ def home(request):
         "posts": ["html", "css", "javascript"],
         "posts": posts,
         "title" : "Home Page",
-   
+
+    
 
     }
     return render(request, "blog/home.html", context)
